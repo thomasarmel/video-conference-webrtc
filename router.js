@@ -17,7 +17,7 @@ module.exports = function (app, socketIoServer) {
         var path = req.params.path;
         if (path !== 'favicon.ico') {
             console.log("[router.js] Requested room " + path);
-            res.render('room', { "hostAddress": socketIoServer });
+            res.render('room');
         }
     });
 
